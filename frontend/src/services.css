@@ -1,0 +1,167 @@
+/* ---------------------- Overall Page ---------------------- */
+.services-page {
+  font-family: "Poppins", sans-serif;
+  background: #f7faff;
+  padding-bottom: 60px;
+  color: #222;
+}
+
+/* ---------------------- Filters Section ---------------------- */
+.top-filters {
+  position: relative;
+  width: 90%;
+  margin: 30px auto 50px;
+  background: #ffffffcc; /* semi-transparent for floating feel */
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  padding: 25px 35px;
+  transition: all 0.3s ease;
+}
+
+.top-filters:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(13, 71, 161, 0.15);
+}
+
+.top-filters h3 {
+  font-size: 1.5rem;
+  color: #0d47a1;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.filters-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.filter-item label {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.filter-item input {
+  padding: 10px 14px;
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.filter-item input:focus {
+  border-color: #0d47a1;
+  box-shadow: 0 0 0 3px rgba(13, 71, 161, 0.1);
+}
+
+.top-filters button {
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: all 0.3s ease;
+}
+
+.top-filters button:hover {
+  background: linear-gradient(135deg, #1565c0, #0d47a1);
+  transform: scale(1.05);
+  box-shadow: 0 4px 18px rgba(13, 71, 161, 0.3);
+}
+
+/* ---------------------- Popular Categories ---------------------- */
+.categories-section {
+  width: 90%;
+  margin: 0 auto 60px;
+}
+
+.categories-section h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0d47a1;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 15px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(13, 71, 161, 0.15);
+}
+
+.category-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.1);
+}
+
+.category-card h4 {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* ---------------------- Dynamic Categories ---------------------- */
+.dynamic-categories {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ---------------------- Responsive ---------------------- */
+@media (max-width: 768px) {
+  .filters-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-item input {
+    width: 100%;
+  }
+
+  .top-filters button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .categories-section h3 {
+    font-size: 1.5rem;
+  }
+}

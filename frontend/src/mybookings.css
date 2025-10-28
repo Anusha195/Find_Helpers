@@ -1,0 +1,140 @@
+.my-bookings-page {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.my-bookings-page h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.bookings-section {
+  margin-top: 30px;
+}
+
+.bookings-section h3 {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-left: 4px solid #007bff;
+  padding-left: 10px;
+}
+
+.bookings-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.booking-card {
+  border: 1px solid #e3e3e3;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fafafa;
+  transition: all 0.25s ease-in-out;
+}
+
+.booking-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+.booking-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.booking-card p {
+  font-size: 0.95rem;
+  margin: 6px 0;
+  color: #444;
+}
+
+.booking-card b {
+  color: #000;
+}
+
+.btn-cancel,
+.btn-review {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.btn-cancel {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+}
+
+.btn-cancel:hover {
+  background-color: #b92b3a;
+}
+
+.btn-review {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.btn-review:hover {
+  background-color: #0056b3;
+}
+
+.helper-section {
+  margin-top: 40px;
+  border-top: 2px dashed #ddd;
+  padding-top: 25px;
+}
+
+.helper-section h3 {
+  font-size: 1.3rem;
+  color: #007bff;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.helper-section .booking-card {
+  background-color: #f1f8ff;
+  border: 1px solid #d0e3ff;
+}
+
+.confirm-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .bookings-list {
+    grid-template-columns: 1fr;
+  }
+
+  .my-bookings-page {
+    padding: 20px;
+  }
+}
